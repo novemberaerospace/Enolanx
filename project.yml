@@ -1,0 +1,83 @@
+name: Genolanx
+options:
+  bundleIdPrefix: com.ethercap.genolanx
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "26.2"
+  createIntermediateGroups: true
+  defaultConfig: Debug
+
+settings:
+  base:
+    ARCHS: arm64
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    PRODUCT_BUNDLE_IDENTIFIER: com.ethercap.genolanx
+    INFOPLIST_KEY_CFBundleDisplayName: Genolanx
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: 1
+
+targets:
+  Genolanx:
+    type: application
+    platform: macOS
+    sources:
+      # App sources
+      - path: Sources/App
+        type: group
+      # PicoGK Swift wrappers
+      - path: Sources/PicoGKSwift
+        type: group
+      # Metal renderer
+      - path: Sources/NXRenderer
+        type: group
+      # ShapeKernel
+      - path: Sources/NXShapeKernel
+        type: group
+      # Examples
+      - path: Examples
+        type: group
+      # C Bridge (header + shim)
+      - path: Sources/PicoGKBridge
+        type: group
+
+    settings:
+      base:
+        # Swift can find the C bridge header
+        SWIFT_INCLUDE_PATHS: $(SRCROOT)/Sources/PicoGKBridge/include
+        # Import the module map
+        OTHER_SWIFT_FLAGS: -Xcc -fmodule-map-file=$(SRCROOT)/Sources/PicoGKBridge/include/module.modulemap
+        # Library search paths for linking picogk
+        LIBRARY_SEARCH_PATHS:
+          - $(SRCROOT)/Frameworks
+        # Link the native dylibs (no lib prefix, so use full paths)
+        OTHER_LDFLAGS:
+          - "$(SRCROOT)/Frameworks/picogk.1.7.dylib"
+          - "$(SRCROOT)/Frameworks/picogk.1.7_liblzma.5.dylib"
+          - "$(SRCROOT)/Frameworks/picogk.1.7_libzstd.1.dylib"
+        # Runtime search path for dylibs
+        LD_RUNPATH_SEARCH_PATHS:
+          - "@executable_path/../Frameworks"
+        # Info.plist generation
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.developer-tools"
+        INFOPLIST_KEY_NSHighResolutionCapable: YES
+        # Strict concurrency (Swift 6 compat)
+        SWIFT_STRICT_CONCURRENCY: minimal
+        # Disable sandbox for file export
+        ENABLE_APP_SANDBOX: NO
+
+    # Copy dylibs to Frameworks directory in bundle
+    postBuildScripts:
+      - name: "Copy PicoGK Dylibs"
+        script: |
+          mkdir -p "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}"
+          cp -f "${SRCROOT}/Frameworks/picogk.1.7.dylib" "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/"
+          cp -f "${SRCROOT}/Frameworks/picogk.1.7_liblzma.5.dylib" "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/"
+          cp -f "${SRCROOT}/Frameworks/picogk.1.7_libzstd.1.dylib" "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/"
+
+          # Ad-hoc codesign the copied dylibs
+          codesign --force --sign - "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/picogk.1.7.dylib"
+          codesign --force --sign - "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/picogk.1.7_liblzma.5.dylib"
+          codesign --force --sign - "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/picogk.1.7_libzstd.1.dylib"
+        basedOnDependencyAnalysis: false

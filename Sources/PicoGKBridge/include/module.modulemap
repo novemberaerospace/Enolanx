@@ -1,0 +1,5 @@
+module PicoGKBridge {
+    header "picogk_bridge.h"
+    link "picogk.1.7"
+    export *
+}

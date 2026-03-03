@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0133B69EC0E47682BAB9C32B /* LatticeManifold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00C5236D4833A33C25CEF8 /* LatticeManifold.swift */; };
+		02D5A9EFC7D86C67E59C3769 /* VecOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA4DB9B0B1D5A4906738D64 /* VecOperations.swift */; };
+		0FC9DFB1C9293E8E1A06ACBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FFFD8AD9798AD61B2CE17B /* ContentView.swift */; };
+		11DED101F6303A79DCA33665 /* BaseLens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2273DC5448ACF5CC347C29D7 /* BaseLens.swift */; };
+		12379E3736B55DD879754651 /* BallBearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87E47174DDDF7A92156117C /* BallBearing.swift */; };
+		12E5CC9BAF25A839AAF78FE3 /* SuperShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78237E435E1AF9B23BE4B7B /* SuperShapes.swift */; };
+		1895156CDA32630F986DF6C3 /* Ex_LatticeManifoldShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE78DA45D99A75A56D559EDD /* Ex_LatticeManifoldShowCase.swift */; };
+		1947D9D75D867A1615E24CEB /* MethorTurbineMuller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF71B1ADF513F4751C7253 /* MethorTurbineMuller.swift */; };
+		196734941C123799904B51F9 /* TangentialControlSpline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00CCF05DD8D8DC21F4E1784 /* TangentialControlSpline.swift */; };
+		23AF38E2C447DCEFBB06AD48 /* BaseSphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC20C526884AFB73DBDC66 /* BaseSphere.swift */; };
+		23E59FECB108CC20092A9998 /* Ex_BaseBoxShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFD853301EE7A4F04FA18F /* Ex_BaseBoxShowCase.swift */; };
+		2A5850BEF11DF1E068C3FAC3 /* ImplicitShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA870CAD37822722170E061 /* ImplicitShapes.swift */; };
+		2B280F4A18E807FB09D6A370 /* Ex_OverOffsetShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EBCC8EE896731559DC7D5 /* Ex_OverOffsetShowCase.swift */; };
+		2C1F89E2A967450CC1B3180E /* Ex_BasePipeSegmentShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B793F1994BBF577C7E784 /* Ex_BasePipeSegmentShowCase.swift */; };
+		2FE92CF8B7ED2348D39E27F1 /* HelixHeatX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB67BDDD6365AE4A958C69 /* HelixHeatX.swift */; };
+		301F1718EFD54C3470695E63 /* LocalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8E3C4FB1B461BF428A456 /* LocalFrame.swift */; };
+		33196CB4E169F8B6EFE9EE1A /* GenolanxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DCC8F7CD757189BFA4B25 /* GenolanxApp.swift */; };
+		34D19EA7E57CA7E0D6FE4EC5 /* Ex_ImplicitGyroidGenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163F3E8945E5988785D59429 /* Ex_ImplicitGyroidGenus.swift */; };
+		3CB53E2A11FBDFB16BB57824 /* BaseCone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECC4F1D7839FE5FE613F72 /* BaseCone.swift */; };
+		405E923BE8C7CDCC9FE91512 /* Ex_BasePipeShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDFF9850E10D685CE683416 /* Ex_BasePipeShowCase.swift */; };
+		443CED26854F158373BB741C /* Ex_MeshTrafoShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F006695625E32595012D2 /* Ex_MeshTrafoShowCase.swift */; };
+		447F7EDEFDD93400798C702E /* Ex_ImplicitGyroidSphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F6CEDABCFFD44A4FF28772 /* Ex_ImplicitGyroidSphere.swift */; };
+		4B99E29A1B54296373047AF3 /* BaseCylinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9AC31057E8D9B7748014D /* BaseCylinder.swift */; };
+		4EBD767B99AA6A4BB12191F1 /* LineModulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D25EAF44A5715ACB3CDA1 /* LineModulation.swift */; };
+		5612780949D3412A9003511D /* PicoGKScalarField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA279E095A8C0F64E3A6C731 /* PicoGKScalarField.swift */; };
+		57CF98FE0E5B4DBAC235B4E8 /* Ex_BaseSphereShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D36CE58FD8603D2D0FA37B /* Ex_BaseSphereShowCase.swift */; };
+		59778CC6004760D33E97C17F /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90462F73B52B8884A223FD8A /* SceneManager.swift */; };
+		5F9F273F5DE415DCF7515850 /* ThreadCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6595F7715B5A1AA7068CE /* ThreadCutter.swift */; };
+		60D8C4A36EF68636A025FF9B /* Ex_BaseLensShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1A97BAC23302CA1358A6A /* Ex_BaseLensShowCase.swift */; };
+		6196410B03ACD8F714B36D4E /* PicoGKLattice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831C6B5E4B9F12E1BA11878 /* PicoGKLattice.swift */; };
+		631049C85104EB59DE96B340 /* BasePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA6AE113C9488CF6F797D2 /* BasePipe.swift */; };
+		63DB13482396048CA4049237 /* MeshBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882AE458844C7A88006C8A4F /* MeshBuffer.swift */; };
+		643DFBA33263612E94CE3BF8 /* MethorTurbineNelis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BF87CCD969D6E61CF80ADF /* MethorTurbineNelis.swift */; };
+		A1B2C3D4E5F60718293A4B5C /* MethorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6071829A1B2C3A4B5C6 /* MethorAssembly.swift */; };
+		B2C3D4E5F6071829A3B4C5D6 /* MotorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6071829A1B2C3D4A5B6C7 /* MotorConfig.swift */; };
+		6FC70C89D001125ACDC1BC13 /* ScrewHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34DB249DDABA2D10A9C20 /* ScrewHole.swift */; };
+		7496CA854A7FF4082A7FF961 /* SurfaceModulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD26F12F097485B67C3B3B7 /* SurfaceModulation.swift */; };
+		76D56E95E113694CCA44C6BE /* MorlandFunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D7C4225836634021A98A5C /* MorlandFunnel.swift */; };
+		78B1122271B0AB5CFDCED219 /* PicoGKTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3333358B85878E7BAEE6756 /* PicoGKTypes.swift */; };
+		7B7A753AB60A7EBADC4B46F1 /* PBRShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = DF52C04EDEE9A6230329D235 /* PBRShaders.metal */; };
+		7FB94F4ACC58D3CC16497E35 /* Frames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FBBCB9CB85EAFED06EC45 /* Frames.swift */; };
+		7FED197221831BE1E6D48CDE /* MethorHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C5BA2AC84DD0FAE42278 /* MethorHub.swift */; };
+		8438604E4BEC193012E94D90 /* BaseRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084D5A7057DD4ABFAE3CD08 /* BaseRing.swift */; };
+		8896544E3901197691C0D94B /* BaseShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1792712A9E69A6B620326E /* BaseShape.swift */; };
+		8E71F2B0F99FB0CBDC11EAEA /* PicoGKVoxels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ED70F21D0FC106610EF960 /* PicoGKVoxels.swift */; };
+		8F17501D6A641A091BA39421 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF0BE7678441611EF1ACB66 /* ColorPalette.swift */; };
+		9314210FCF1827AE8109EC4C /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7F816C79F1F4DF4E95856 /* MetalRenderer.swift */; };
+		932B3971A98025DDD9541CFB /* LatticePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3326C9715C54E5C9E1D36C1C /* LatticePipe.swift */; };
+		93DAB24C2F4890CC00020BE0 /* MabogeInducteur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAB24B2F4890CC00020BE0 /* MabogeInducteur.swift */; };
+		AA1F3B7C9D4E6A2F08B71D53 /* MabogeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3D9E1A4F8B52C6D0A93E17 /* MabogeSlot.swift */; };
+		9B9C59226C6BB04FA4DA3CF8 /* ThreadReinforcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B89EF9985BD5E2ABD03935 /* ThreadReinforcement.swift */; };
+		A2C28A65E12F31B26AFCC60B /* ViewportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF0056E38278D3BCC598B39 /* ViewportView.swift */; };
+		A880C7E21A3BA2AD6FBF327F /* UsefulFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C6CFEEFC67F3A38811E08 /* UsefulFormulas.swift */; };
+		AF5331A211E993C5674B5940 /* RenderGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E714E8E25652C2C8A2BF965 /* RenderGroup.swift */; };
+		B2180AEB2137E6F8BED4D288 /* PicoGKPolyLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D573A2B752BDFE183EB95D /* PicoGKPolyLine.swift */; };
+		B367789226D118EE026FAA9E /* SpiralInductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D8E392A21F03AFE524014 /* SpiralInductor.swift */; };
+		B37A5784A5FA63038677192B /* Ex_BasicLattices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1065E1C54E28C5715CA77C1 /* Ex_BasicLattices.swift */; };
+		B8AFE388CDFA32C0B78BD298 /* ShExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF586149E8DE2EEF25F664E /* ShExport.swift */; };
+		BC779DB8715C215493FE220D /* ShPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2665D13C1CD10D5A6B0B024 /* ShPreview.swift */; };
+		BDBEBD175CDB2D8B445CEDEB /* PicoGKMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE55A7BA83935FEA138C12 /* PicoGKMesh.swift */; };
+		C3D29E3E6A8E170416B08435 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B89091B9E0CC35C4926655 /* Camera.swift */; };
+		C46A5775366AE5A334290572 /* PicoGKFieldMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C97960FA897B65BC79160BD /* PicoGKFieldMetadata.swift */; };
+		C6E0CA546FFB1CA287903331 /* BasePipeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393A7485C1A07ADBF372B87 /* BasePipeSegment.swift */; };
+		C81329E462922C681C01E3CD /* PicoGKLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B014C163450B5EA2420BE64 /* PicoGKLibrary.swift */; };
+		C8296DFDE225523630390536 /* Ex_BaseRingShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62305D080649D58A8A158AF /* Ex_BaseRingShowCase.swift */; };
+		D436D3743F1D38B2AC361E73 /* InspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915B718C5DA49EA1940333FD /* InspectorView.swift */; };
+		D5907572DF833D1AC2D89F07 /* PicoGKVectorField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A6511E7D835F0B8298CB3 /* PicoGKVectorField.swift */; };
+		D5C6D5F420D6E3BD9AC81C68 /* ControlPointSpline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4953DB2B41CDBF4003A98F /* ControlPointSpline.swift */; };
+		DB8D55D0099AFBD2B13AA05F /* MorlandHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC725EE5E8251482143A759 /* MorlandHub.swift */; };
+		DBB2B2C8E41D303A6715C3D3 /* picogk_bridge_shim.c in Sources */ = {isa = PBXBuildFile; fileRef = EB51E6766735B45CC2081912 /* picogk_bridge_shim.c */; };
+		E04BD3C25C29C1F5C912AB33 /* BaseBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949353F2FC476BF8381C5A19 /* BaseBox.swift */; };
+		E4C34481CBBF98EFF3C2B186 /* ExampleSpline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E29486EF765F3F52D2791 /* ExampleSpline.swift */; };
+		E5A95E85BAA5F543892F676E /* Ex_LatticePipeShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609EC716109F4DB3315A445E /* Ex_LatticePipeShowCase.swift */; };
+		E787E57DC1668CA8D8D7D211 /* Ex_BaseCylinderShowcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF877754AAD913B97C24E /* Ex_BaseCylinderShowcase.swift */; };
+		E9D579A432A9AB15B8C2E1B5 /* PicoGKOpenVdbFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14176A4D65DCE5D70115715B /* PicoGKOpenVdbFile.swift */; };
+		EDF431FFF3DAFEAFFC1DA3E0 /* Ex_ImplicitSuperEllipsoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A237BE5540A367DCCCA3D9 /* Ex_ImplicitSuperEllipsoid.swift */; };
+		F57A8E4686D68513463DA4D4 /* SplineOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9B8D2509449D654403833 /* SplineOperations.swift */; };
+		FE7FBF1272F31760E2702555 /* PolyLineBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1178EE2ACE79A540D95BFC90 /* PolyLineBuffer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		071A6511E7D835F0B8298CB3 /* PicoGKVectorField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoGKVectorField.swift; sourceTree = "<group>"; };
+		080E29486EF765F3F52D2791 /* ExampleSpline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSpline.swift; sourceTree = "<group>"; };
+		0CA8E3C4FB1B461BF428A456 /* LocalFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFrame.swift; sourceTree = "<group>"; };
+		0E714E8E25652C2C8A2BF965 /* RenderGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderGroup.swift; sourceTree = "<group>"; };
+		1178EE2ACE79A540D95BFC90 /* PolyLineBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyLineBuffer.swift; sourceTree = "<group>"; };
+		14176A4D65DCE5D70115715B /* PicoGKOpenVdbFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoGKOpenVdbFile.swift; sourceTree = "<group>"; };
+		163F3E8945E5988785D59429 /* Ex_ImplicitGyroidGenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_ImplicitGyroidGenus.swift; sourceTree = "<group>"; };
+		19B1A97BAC23302CA1358A6A /* Ex_BaseLensShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_BaseLensShowCase.swift; sourceTree = "<group>"; };
+		1A9D25EAF44A5715ACB3CDA1 /* LineModulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineModulation.swift; sourceTree = "<group>"; };
+		1C5AF877754AAD913B97C24E /* Ex_BaseCylinderShowcase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_BaseCylinderShowcase.swift; sourceTree = "<group>"; };
+		1EA870CAD37822722170E061 /* ImplicitShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitShapes.swift; sourceTree = "<group>"; };
+		20D573A2B752BDFE183EB95D /* PicoGKPolyLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoGKPolyLine.swift; sourceTree = "<group>"; };
+		2273DC5448ACF5CC347C29D7 /* BaseLens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLens.swift; sourceTree = "<group>"; };
+		24ED70F21D0FC106610EF960 /* PicoGKVoxels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoGKVoxels.swift; sourceTree = "<group>"; };
+		2B014C163450B5EA2420BE64 /* PicoGKLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoGKLibrary.swift; sourceTree = "<group>"; };
+		2CDC20C526884AFB73DBDC66 /* BaseSphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSphere.swift; sourceTree = "<group>"; };
+		2F4953DB2B41CDBF4003A98F /* ControlPointSpline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPointSpline.swift; sourceTree = "<group>"; };
+		3326C9715C54E5C9E1D36C1C /* LatticePipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatticePipe.swift; sourceTree = "<group>"; };
+		37287EA5DA0593EA26920D18 /* picogk_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = picogk_bridge.h; sourceTree = "<group>"; };
+		37D36CE58FD8603D2D0FA37B /* Ex_BaseSphereShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_BaseSphereShowCase.swift; sourceTree = "<group>"; };
+		3F5EBCC8EE896731559DC7D5 /* Ex_OverOffsetShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_OverOffsetShowCase.swift; sourceTree = "<group>"; };
+		40FFFD8AD9798AD61B2CE17B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		415B793F1994BBF577C7E784 /* Ex_BasePipeSegmentShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_BasePipeSegmentShowCase.swift; sourceTree = "<group>"; };
+		4CD26F12F097485B67C3B3B7 /* SurfaceModulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceModulation.swift; sourceTree = "<group>"; };
+		4E19C5BA2AC84DD0FAE42278 /* MethorHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethorHub.swift; sourceTree = "<group>"; };
+		D4E5F6071829A1B2C3A4B5C6 /* MethorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethorAssembly.swift; sourceTree = "<group>"; };
+		E5F6071829A1B2C3D4A5B6C7 /* MotorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorConfig.swift; sourceTree = "<group>"; };
+		5084D5A7057DD4ABFAE3CD08 /* BaseRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRing.swift; sourceTree = "<group>"; };
+		5393A7485C1A07ADBF372B87 /* BasePipeSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePipeSegment.swift; sourceTree = "<group>"; };
+		53ECC4F1D7839FE5FE613F72 /* BaseCone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCone.swift; sourceTree = "<group>"; };
+		57B89091B9E0CC35C4926655 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		5AA4DB9B0B1D5A4906738D64 /* VecOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VecOperations.swift; sourceTree = "<group>"; };
+		609EC716109F4DB3315A445E /* Ex_LatticePipeShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_LatticePipeShowCase.swift; sourceTree = "<group>"; };
+		6AFF71B1ADF513F4751C7253 /* MethorTurbineMuller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethorTurbineMuller.swift; sourceTree = "<group>"; };
+		6EC725EE5E8251482143A759 /* MorlandHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorlandHub.swift; sourceTree = "<group>"; };
+		706F006695625E32595012D2 /* Ex_MeshTrafoShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_MeshTrafoShowCase.swift; sourceTree = "<group>"; };
+		73A237BE5540A367DCCCA3D9 /* Ex_ImplicitSuperEllipsoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_ImplicitSuperEllipsoid.swift; sourceTree = "<group>"; };
+		7E2A3A356FB7E4560A92FA57 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		841D8E392A21F03AFE524014 /* SpiralInductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralInductor.swift; sourceTree = "<group>"; };
+		882AE458844C7A88006C8A4F /* MeshBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBuffer.swift; sourceTree = "<group>"; };
+		89F7F816C79F1F4DF4E95856 /* MetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		8A00C5236D4833A33C25CEF8 /* LatticeManifold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatticeManifold.swift; sourceTree = "<group>"; };
+		8DF0056E38278D3BCC598B39 /* ViewportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewportView.swift; sourceTree = "<group>"; };
+		90462F73B52B8884A223FD8A /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		915B718C5DA49EA1940333FD /* InspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorView.swift; sourceTree = "<group>"; };
+		93DAB24B2F4890CC00020BE0 /* MabogeInducteur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MabogeInducteur.swift; sourceTree = "<group>"; };
+		7C3D9E1A4F8B52C6D0A93E17 /* MabogeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MabogeSlot.swift; sourceTree = "<group>"; };
+		949353F2FC476BF8381C5A19 /* BaseBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBox.swift; sourceTree = "<group>"; };
+		98B89EF9985BD5E2ABD03935 /* ThreadReinforcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReinforcement.swift; sourceTree = "<group>"; };
+		9C97960FA897B65BC79160BD /* PicoGKFieldMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoGKFieldMetadata.swift; sourceTree = "<group>"; };
+		9D1FBBCB9CB85EAFED06EC45 /* Frames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frames.swift; sourceTree = "<group>"; };
+		9F0C6CFEEFC67F3A38811E08 /* UsefulFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulFormulas.swift; sourceTree = "<group>"; };
+		A0DA6AE113C9488CF6F797D2 /* BasePipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePipe.swift; sourceTree = "<group>"; };
+		A2665D13C1CD10D5A6B0B024 /* ShPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShPreview.swift; sourceTree = "<group>"; };
+		A2BF87CCD969D6E61CF80ADF /* MethorTurbineNelis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethorTurbineNelis.swift; sourceTree = "<group>"; };
+		AA279E095A8C0F64E3A6C731 /* PicoGKScalarField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoGKScalarField.swift; sourceTree = "<group>"; };
+		AE1792712A9E69A6B620326E /* BaseShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseShape.swift; sourceTree = "<group>"; };
+		B63DCC8F7CD757189BFA4B25 /* GenolanxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenolanxApp.swift; sourceTree = "<group>"; };
+		BCBB67BDDD6365AE4A958C69 /* HelixHeatX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelixHeatX.swift; sourceTree = "<group>"; };
+		C00CCF05DD8D8DC21F4E1784 /* TangentialControlSpline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangentialControlSpline.swift; sourceTree = "<group>"; };
+		C3764B520AD4CA32B3FD37E1 /* Genolanx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Genolanx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F6CEDABCFFD44A4FF28772 /* Ex_ImplicitGyroidSphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_ImplicitGyroidSphere.swift; sourceTree = "<group>"; };
+		C5D7C4225836634021A98A5C /* MorlandFunnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorlandFunnel.swift; sourceTree = "<group>"; };
+		C87E47174DDDF7A92156117C /* BallBearing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallBearing.swift; sourceTree = "<group>"; };
+		CFDFF9850E10D685CE683416 /* Ex_BasePipeShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_BasePipeShowCase.swift; sourceTree = "<group>"; };
+		D1A9AC31057E8D9B7748014D /* BaseCylinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCylinder.swift; sourceTree = "<group>"; };
+		D3333358B85878E7BAEE6756 /* PicoGKTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoGKTypes.swift; sourceTree = "<group>"; };
+		DBA6595F7715B5A1AA7068CE /* ThreadCutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCutter.swift; sourceTree = "<group>"; };
+		DBF0BE7678441611EF1ACB66 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		DF52C04EDEE9A6230329D235 /* PBRShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PBRShaders.metal; sourceTree = "<group>"; };
+		E1065E1C54E28C5715CA77C1 /* Ex_BasicLattices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_BasicLattices.swift; sourceTree = "<group>"; };
+		E5B9B8D2509449D654403833 /* SplineOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplineOperations.swift; sourceTree = "<group>"; };
+		E62305D080649D58A8A158AF /* Ex_BaseRingShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_BaseRingShowCase.swift; sourceTree = "<group>"; };
+		E7BFD853301EE7A4F04FA18F /* Ex_BaseBoxShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_BaseBoxShowCase.swift; sourceTree = "<group>"; };
+		E831C6B5E4B9F12E1BA11878 /* PicoGKLattice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoGKLattice.swift; sourceTree = "<group>"; };
+		EB51E6766735B45CC2081912 /* picogk_bridge_shim.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = picogk_bridge_shim.c; sourceTree = "<group>"; };
+		ECF586149E8DE2EEF25F664E /* ShExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShExport.swift; sourceTree = "<group>"; };
+		EE78DA45D99A75A56D559EDD /* Ex_LatticeManifoldShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_LatticeManifoldShowCase.swift; sourceTree = "<group>"; };
+		EECE55A7BA83935FEA138C12 /* PicoGKMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoGKMesh.swift; sourceTree = "<group>"; };
+		F78237E435E1AF9B23BE4B7B /* SuperShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperShapes.swift; sourceTree = "<group>"; };
+		FDA34DB249DDABA2D10A9C20 /* ScrewHole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrewHole.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		19B7395FAB23EAE3D444027A /* BallBearing */ = {
+			isa = PBXGroup;
+			children = (
+				C87E47174DDDF7A92156117C /* BallBearing.swift */,
+			);
+			path = BallBearing;
+			sourceTree = "<group>";
+		};
+		1F35C81629A22462676CF980 /* NXShapeKernel */ = {
+			isa = PBXGroup;
+			children = (
+				949353F2FC476BF8381C5A19 /* BaseBox.swift */,
+				53ECC4F1D7839FE5FE613F72 /* BaseCone.swift */,
+				D1A9AC31057E8D9B7748014D /* BaseCylinder.swift */,
+				2273DC5448ACF5CC347C29D7 /* BaseLens.swift */,
+				A0DA6AE113C9488CF6F797D2 /* BasePipe.swift */,
+				5393A7485C1A07ADBF372B87 /* BasePipeSegment.swift */,
+				5084D5A7057DD4ABFAE3CD08 /* BaseRing.swift */,
+				AE1792712A9E69A6B620326E /* BaseShape.swift */,
+				2CDC20C526884AFB73DBDC66 /* BaseSphere.swift */,
+				DBF0BE7678441611EF1ACB66 /* ColorPalette.swift */,
+				2F4953DB2B41CDBF4003A98F /* ControlPointSpline.swift */,
+				080E29486EF765F3F52D2791 /* ExampleSpline.swift */,
+				9D1FBBCB9CB85EAFED06EC45 /* Frames.swift */,
+				1EA870CAD37822722170E061 /* ImplicitShapes.swift */,
+				8A00C5236D4833A33C25CEF8 /* LatticeManifold.swift */,
+				3326C9715C54E5C9E1D36C1C /* LatticePipe.swift */,
+				1A9D25EAF44A5715ACB3CDA1 /* LineModulation.swift */,
+				0CA8E3C4FB1B461BF428A456 /* LocalFrame.swift */,
+				FDA34DB249DDABA2D10A9C20 /* ScrewHole.swift */,
+				ECF586149E8DE2EEF25F664E /* ShExport.swift */,
+				A2665D13C1CD10D5A6B0B024 /* ShPreview.swift */,
+				E5B9B8D2509449D654403833 /* SplineOperations.swift */,
+				F78237E435E1AF9B23BE4B7B /* SuperShapes.swift */,
+				4CD26F12F097485B67C3B3B7 /* SurfaceModulation.swift */,
+				C00CCF05DD8D8DC21F4E1784 /* TangentialControlSpline.swift */,
+				DBA6595F7715B5A1AA7068CE /* ThreadCutter.swift */,
+				98B89EF9985BD5E2ABD03935 /* ThreadReinforcement.swift */,
+				9F0C6CFEEFC67F3A38811E08 /* UsefulFormulas.swift */,
+				5AA4DB9B0B1D5A4906738D64 /* VecOperations.swift */,
+			);
+			path = NXShapeKernel;
+			sourceTree = "<group>";
+		};
+		23556A8E38B43288E1412A6D /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				FFD79E116CB294590F3BD260 /* AEM */,
+				19B7395FAB23EAE3D444027A /* BallBearing */,
+				EE2A26191CFFC262EF155F09 /* CM */,
+				EDB7D91C7866F268E3D4EB32 /* OC-1 */,
+				497B0915E5724AFEE98CA821 /* ShapeKernelShowcases */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		327E9B229A0C05075BBF0287 /* PicoGKSwift */ = {
+			isa = PBXGroup;
+			children = (
+				9C97960FA897B65BC79160BD /* PicoGKFieldMetadata.swift */,
+				E831C6B5E4B9F12E1BA11878 /* PicoGKLattice.swift */,
+				2B014C163450B5EA2420BE64 /* PicoGKLibrary.swift */,
+				EECE55A7BA83935FEA138C12 /* PicoGKMesh.swift */,
+				14176A4D65DCE5D70115715B /* PicoGKOpenVdbFile.swift */,
+				20D573A2B752BDFE183EB95D /* PicoGKPolyLine.swift */,
+				AA279E095A8C0F64E3A6C731 /* PicoGKScalarField.swift */,
+				D3333358B85878E7BAEE6756 /* PicoGKTypes.swift */,
+				071A6511E7D835F0B8298CB3 /* PicoGKVectorField.swift */,
+				24ED70F21D0FC106610EF960 /* PicoGKVoxels.swift */,
+			);
+			path = PicoGKSwift;
+			sourceTree = "<group>";
+		};
+		3E5E568EEFFA54F12FCD8802 /* PicoGKBridge */ = {
+			isa = PBXGroup;
+			children = (
+				EB51E6766735B45CC2081912 /* picogk_bridge_shim.c */,
+				C7D2BF1DD39B40F579585632 /* include */,
+			);
+			path = PicoGKBridge;
+			sourceTree = "<group>";
+		};
+		497B0915E5724AFEE98CA821 /* ShapeKernelShowcases */ = {
+			isa = PBXGroup;
+			children = (
+				E7BFD853301EE7A4F04FA18F /* Ex_BaseBoxShowCase.swift */,
+				1C5AF877754AAD913B97C24E /* Ex_BaseCylinderShowcase.swift */,
+				19B1A97BAC23302CA1358A6A /* Ex_BaseLensShowCase.swift */,
+				415B793F1994BBF577C7E784 /* Ex_BasePipeSegmentShowCase.swift */,
+				CFDFF9850E10D685CE683416 /* Ex_BasePipeShowCase.swift */,
+				E62305D080649D58A8A158AF /* Ex_BaseRingShowCase.swift */,
+				37D36CE58FD8603D2D0FA37B /* Ex_BaseSphereShowCase.swift */,
+				E1065E1C54E28C5715CA77C1 /* Ex_BasicLattices.swift */,
+				163F3E8945E5988785D59429 /* Ex_ImplicitGyroidGenus.swift */,
+				C4F6CEDABCFFD44A4FF28772 /* Ex_ImplicitGyroidSphere.swift */,
+				73A237BE5540A367DCCCA3D9 /* Ex_ImplicitSuperEllipsoid.swift */,
+				EE78DA45D99A75A56D559EDD /* Ex_LatticeManifoldShowCase.swift */,
+				609EC716109F4DB3315A445E /* Ex_LatticePipeShowCase.swift */,
+				706F006695625E32595012D2 /* Ex_MeshTrafoShowCase.swift */,
+				3F5EBCC8EE896731559DC7D5 /* Ex_OverOffsetShowCase.swift */,
+			);
+			path = ShapeKernelShowcases;
+			sourceTree = "<group>";
+		};
+		760F6DA60C364BD371C6A095 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				40FFFD8AD9798AD61B2CE17B /* ContentView.swift */,
+				915B718C5DA49EA1940333FD /* InspectorView.swift */,
+				B63DCC8F7CD757189BFA4B25 /* GenolanxApp.swift */,
+				90462F73B52B8884A223FD8A /* SceneManager.swift */,
+				8DF0056E38278D3BCC598B39 /* ViewportView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A7EC33A5F37DF33D818CDF36 /* NXRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				57B89091B9E0CC35C4926655 /* Camera.swift */,
+				882AE458844C7A88006C8A4F /* MeshBuffer.swift */,
+				89F7F816C79F1F4DF4E95856 /* MetalRenderer.swift */,
+				DF52C04EDEE9A6230329D235 /* PBRShaders.metal */,
+				1178EE2ACE79A540D95BFC90 /* PolyLineBuffer.swift */,
+				0E714E8E25652C2C8A2BF965 /* RenderGroup.swift */,
+			);
+			path = NXRenderer;
+			sourceTree = "<group>";
+		};
+		C7D2BF1DD39B40F579585632 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A3A356FB7E4560A92FA57 /* module.modulemap */,
+				37287EA5DA0593EA26920D18 /* picogk_bridge.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EB85AA382F26AF7DB7B9F36C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3764B520AD4CA32B3FD37E1 /* Genolanx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDB7D91C7866F268E3D4EB32 /* OC-1 */ = {
+			isa = PBXGroup;
+			children = (
+				93DAB24B2F4890CC00020BE0 /* MabogeInducteur.swift */,
+				BCBB67BDDD6365AE4A958C69 /* HelixHeatX.swift */,
+				841D8E392A21F03AFE524014 /* SpiralInductor.swift */,
+			);
+			path = "OC-1";
+			sourceTree = "<group>";
+		};
+		EE2A26191CFFC262EF155F09 /* CM */ = {
+			isa = PBXGroup;
+			children = (
+				C5D7C4225836634021A98A5C /* MorlandFunnel.swift */,
+				6EC725EE5E8251482143A759 /* MorlandHub.swift */,
+			);
+			path = CM;
+			sourceTree = "<group>";
+		};
+		F847147D2339709380EF2200 = {
+			isa = PBXGroup;
+			children = (
+				23556A8E38B43288E1412A6D /* Examples */,
+				FFD623C896A74A4DFA475ECE /* Sources */,
+				EB85AA382F26AF7DB7B9F36C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFD623C896A74A4DFA475ECE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				760F6DA60C364BD371C6A095 /* App */,
+				A7EC33A5F37DF33D818CDF36 /* NXRenderer */,
+				1F35C81629A22462676CF980 /* NXShapeKernel */,
+				3E5E568EEFFA54F12FCD8802 /* PicoGKBridge */,
+				327E9B229A0C05075BBF0287 /* PicoGKSwift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FFD79E116CB294590F3BD260 /* AEM */ = {
+			isa = PBXGroup;
+			children = (
+				7C3D9E1A4F8B52C6D0A93E17 /* MabogeSlot.swift */,
+				D4E5F6071829A1B2C3A4B5C6 /* MethorAssembly.swift */,
+				E5F6071829A1B2C3D4A5B6C7 /* MotorConfig.swift */,
+				4E19C5BA2AC84DD0FAE42278 /* MethorHub.swift */,
+				6AFF71B1ADF513F4751C7253 /* MethorTurbineMuller.swift */,
+				A2BF87CCD969D6E61CF80ADF /* MethorTurbineNelis.swift */,
+			);
+			path = AEM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB90606D53AC85BB10FA09D2 /* Genolanx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF56CD5BE4F188808877A19 /* Build configuration list for PBXNativeTarget "Genolanx" */;
+			buildPhases = (
+				51919201C92787082162D298 /* Sources */,
+				D15560CA570D42D6044FD965 /* Copy PicoGK Dylibs */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Genolanx;
+			packageProductDependencies = (
+			);
+			productName = Genolanx;
+			productReference = C3764B520AD4CA32B3FD37E1 /* Genolanx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E925D9C394FC58020D8D51D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2620;
+			};
+			buildConfigurationList = D5290BE29563B92845CBF832 /* Build configuration list for PBXProject "NXGenoevra" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F847147D2339709380EF2200;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB90606D53AC85BB10FA09D2 /* Genolanx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D15560CA570D42D6044FD965 /* Copy PicoGK Dylibs */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy PicoGK Dylibs";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\ncp -f \"${SRCROOT}/Frameworks/picogk.1.7.dylib\" \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/\"\ncp -f \"${SRCROOT}/Frameworks/picogk.1.7_liblzma.5.dylib\" \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/\"\ncp -f \"${SRCROOT}/Frameworks/picogk.1.7_libzstd.1.dylib\" \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/\"\n\n# Ad-hoc codesign the copied dylibs\ncodesign --force --sign - \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/picogk.1.7.dylib\"\ncodesign --force --sign - \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/picogk.1.7_liblzma.5.dylib\"\ncodesign --force --sign - \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/picogk.1.7_libzstd.1.dylib\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51919201C92787082162D298 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12379E3736B55DD879754651 /* BallBearing.swift in Sources */,
+				E04BD3C25C29C1F5C912AB33 /* BaseBox.swift in Sources */,
+				3CB53E2A11FBDFB16BB57824 /* BaseCone.swift in Sources */,
+				4B99E29A1B54296373047AF3 /* BaseCylinder.swift in Sources */,
+				11DED101F6303A79DCA33665 /* BaseLens.swift in Sources */,
+				631049C85104EB59DE96B340 /* BasePipe.swift in Sources */,
+				C6E0CA546FFB1CA287903331 /* BasePipeSegment.swift in Sources */,
+				8438604E4BEC193012E94D90 /* BaseRing.swift in Sources */,
+				8896544E3901197691C0D94B /* BaseShape.swift in Sources */,
+				23AF38E2C447DCEFBB06AD48 /* BaseSphere.swift in Sources */,
+				C3D29E3E6A8E170416B08435 /* Camera.swift in Sources */,
+				8F17501D6A641A091BA39421 /* ColorPalette.swift in Sources */,
+				0FC9DFB1C9293E8E1A06ACBD /* ContentView.swift in Sources */,
+				D5C6D5F420D6E3BD9AC81C68 /* ControlPointSpline.swift in Sources */,
+				23E59FECB108CC20092A9998 /* Ex_BaseBoxShowCase.swift in Sources */,
+				E787E57DC1668CA8D8D7D211 /* Ex_BaseCylinderShowcase.swift in Sources */,
+				60D8C4A36EF68636A025FF9B /* Ex_BaseLensShowCase.swift in Sources */,
+				2C1F89E2A967450CC1B3180E /* Ex_BasePipeSegmentShowCase.swift in Sources */,
+				405E923BE8C7CDCC9FE91512 /* Ex_BasePipeShowCase.swift in Sources */,
+				C8296DFDE225523630390536 /* Ex_BaseRingShowCase.swift in Sources */,
+				57CF98FE0E5B4DBAC235B4E8 /* Ex_BaseSphereShowCase.swift in Sources */,
+				B37A5784A5FA63038677192B /* Ex_BasicLattices.swift in Sources */,
+				93DAB24C2F4890CC00020BE0 /* MabogeInducteur.swift in Sources */,
+				AA1F3B7C9D4E6A2F08B71D53 /* MabogeSlot.swift in Sources */,
+				34D19EA7E57CA7E0D6FE4EC5 /* Ex_ImplicitGyroidGenus.swift in Sources */,
+				447F7EDEFDD93400798C702E /* Ex_ImplicitGyroidSphere.swift in Sources */,
+				EDF431FFF3DAFEAFFC1DA3E0 /* Ex_ImplicitSuperEllipsoid.swift in Sources */,
+				1895156CDA32630F986DF6C3 /* Ex_LatticeManifoldShowCase.swift in Sources */,
+				E5A95E85BAA5F543892F676E /* Ex_LatticePipeShowCase.swift in Sources */,
+				443CED26854F158373BB741C /* Ex_MeshTrafoShowCase.swift in Sources */,
+				2B280F4A18E807FB09D6A370 /* Ex_OverOffsetShowCase.swift in Sources */,
+				E4C34481CBBF98EFF3C2B186 /* ExampleSpline.swift in Sources */,
+				7FB94F4ACC58D3CC16497E35 /* Frames.swift in Sources */,
+				2FE92CF8B7ED2348D39E27F1 /* HelixHeatX.swift in Sources */,
+				2A5850BEF11DF1E068C3FAC3 /* ImplicitShapes.swift in Sources */,
+				D436D3743F1D38B2AC361E73 /* InspectorView.swift in Sources */,
+				0133B69EC0E47682BAB9C32B /* LatticeManifold.swift in Sources */,
+				932B3971A98025DDD9541CFB /* LatticePipe.swift in Sources */,
+				4EBD767B99AA6A4BB12191F1 /* LineModulation.swift in Sources */,
+				301F1718EFD54C3470695E63 /* LocalFrame.swift in Sources */,
+				63DB13482396048CA4049237 /* MeshBuffer.swift in Sources */,
+				9314210FCF1827AE8109EC4C /* MetalRenderer.swift in Sources */,
+				7FED197221831BE1E6D48CDE /* MethorHub.swift in Sources */,
+				1947D9D75D867A1615E24CEB /* MethorTurbineMuller.swift in Sources */,
+				76D56E95E113694CCA44C6BE /* MorlandFunnel.swift in Sources */,
+				DB8D55D0099AFBD2B13AA05F /* MorlandHub.swift in Sources */,
+				33196CB4E169F8B6EFE9EE1A /* GenolanxApp.swift in Sources */,
+				7B7A753AB60A7EBADC4B46F1 /* PBRShaders.metal in Sources */,
+				C46A5775366AE5A334290572 /* PicoGKFieldMetadata.swift in Sources */,
+				6196410B03ACD8F714B36D4E /* PicoGKLattice.swift in Sources */,
+				C81329E462922C681C01E3CD /* PicoGKLibrary.swift in Sources */,
+				BDBEBD175CDB2D8B445CEDEB /* PicoGKMesh.swift in Sources */,
+				E9D579A432A9AB15B8C2E1B5 /* PicoGKOpenVdbFile.swift in Sources */,
+				B2180AEB2137E6F8BED4D288 /* PicoGKPolyLine.swift in Sources */,
+				5612780949D3412A9003511D /* PicoGKScalarField.swift in Sources */,
+				78B1122271B0AB5CFDCED219 /* PicoGKTypes.swift in Sources */,
+				D5907572DF833D1AC2D89F07 /* PicoGKVectorField.swift in Sources */,
+				8E71F2B0F99FB0CBDC11EAEA /* PicoGKVoxels.swift in Sources */,
+				FE7FBF1272F31760E2702555 /* PolyLineBuffer.swift in Sources */,
+				AF5331A211E993C5674B5940 /* RenderGroup.swift in Sources */,
+				59778CC6004760D33E97C17F /* SceneManager.swift in Sources */,
+				6FC70C89D001125ACDC1BC13 /* ScrewHole.swift in Sources */,
+				B8AFE388CDFA32C0B78BD298 /* ShExport.swift in Sources */,
+				BC779DB8715C215493FE220D /* ShPreview.swift in Sources */,
+				B367789226D118EE026FAA9E /* SpiralInductor.swift in Sources */,
+				F57A8E4686D68513463DA4D4 /* SplineOperations.swift in Sources */,
+				12E5CC9BAF25A839AAF78FE3 /* SuperShapes.swift in Sources */,
+				7496CA854A7FF4082A7FF961 /* SurfaceModulation.swift in Sources */,
+				196734941C123799904B51F9 /* TangentialControlSpline.swift in Sources */,
+				5F9F273F5DE415DCF7515850 /* ThreadCutter.swift in Sources */,
+				9B9C59226C6BB04FA4DA3CF8 /* ThreadReinforcement.swift in Sources */,
+				A1B2C3D4E5F60718293A4B5C /* MethorAssembly.swift in Sources */,
+				B2C3D4E5F6071829A3B4C5D6 /* MotorConfig.swift in Sources */,
+				643DFBA33263612E94CE3BF8 /* MethorTurbineNelis.swift in Sources */,
+				A880C7E21A3BA2AD6FBF327F /* UsefulFormulas.swift in Sources */,
+				02D5A9EFC7D86C67E59C3769 /* VecOperations.swift in Sources */,
+				A2C28A65E12F31B26AFCC60B /* ViewportView.swift in Sources */,
+				DBB2B2C8E41D303A6715C3D3 /* picogk_bridge_shim.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2899EC088C6FDB45B8832BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHighResolutionCapable = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/Frameworks/picogk.1.7.dylib",
+					"$(SRCROOT)/Frameworks/picogk.1.7_liblzma.5.dylib",
+					"$(SRCROOT)/Frameworks/picogk.1.7_libzstd.1.dylib",
+				);
+				OTHER_SWIFT_FLAGS = "-Xcc -fmodule-map-file=$(SRCROOT)/Sources/PicoGKBridge/include/module.modulemap";
+				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/PicoGKBridge/include";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+			};
+			name = Debug;
+		};
+		3A58A5388E57D720047DE2A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Genolanx;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethercap.genolanx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		6D1ACD9EF8B55C895F6174DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Genolanx;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethercap.genolanx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		CF63BC8A49DDC5C9D77E913C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHighResolutionCapable = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/Frameworks/picogk.1.7.dylib",
+					"$(SRCROOT)/Frameworks/picogk.1.7_liblzma.5.dylib",
+					"$(SRCROOT)/Frameworks/picogk.1.7_libzstd.1.dylib",
+				);
+				OTHER_SWIFT_FLAGS = "-Xcc -fmodule-map-file=$(SRCROOT)/Sources/PicoGKBridge/include/module.modulemap";
+				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/PicoGKBridge/include";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CF56CD5BE4F188808877A19 /* Build configuration list for PBXNativeTarget "Genolanx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2899EC088C6FDB45B8832BD6 /* Debug */,
+				CF63BC8A49DDC5C9D77E913C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D5290BE29563B92845CBF832 /* Build configuration list for PBXProject "NXGenoevra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D1ACD9EF8B55C895F6174DF /* Debug */,
+				3A58A5388E57D720047DE2A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E925D9C394FC58020D8D51D9 /* Project object */;
+}
